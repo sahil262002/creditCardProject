@@ -1,5 +1,6 @@
-const GROQ_API_KEY = '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';
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY as string;
+const GROQ_API_URL = process.env.REACT_APP_GROQ_API_URL as string;
+
 
 export interface GroqResponse {
   choices: {
